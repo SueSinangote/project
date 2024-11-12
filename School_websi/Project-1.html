@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Today's News & Insights</h1>
+        <nav>
+            <ul>
+                <li><a href="#latest">Latest News</a></li>
+                <li><a href="#politics">Politics</a></li>
+                <li><a href="#tech">Technology</a></li>
+                <li><a href="#sports">Sports</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="latest">
+        <h2>Latest News</h2>
+        <article class="news-item">
+            <h3>Article Title 1</h3>
+            <p class="date">November 12, 2024</p>
+            <p class="summary">This is a brief summary of the article. It gives readers a quick overview.</p>
+            <button onclick="showCommentary('commentary1')">Read Commentary</button>
+            <div id="commentary1" class="commentary">
+                <h4>Commentary</h4>
+                <p>This is where you can provide your commentary on this article.</p>
+            </div>
+        </article>
+
+        <article class="news-item">
+            <h3>Article Title 2</h3>
+            <p class="date">November 12, 2024</p>
+            <p class="summary">Another article summary goes here to give readers an idea of what it’s about.</p>
+            <button onclick="showCommentary('commentary2')">Read Commentary</button>
+            <div id="commentary2" class="commentary">
+                <h4>Commentary</h4>
+                <p>Getshit done.</p>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 News & Commentary. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showCommentary(id) {
+            var commentary = document.getElementById(id);
+            if (commentary.style.display === "none" || commentary.style.display === "") {
+                commentary.style.display = "block";
+            } else {
+                commentary.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
